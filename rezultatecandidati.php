@@ -32,8 +32,7 @@ margin: 0;}
     <th>Judet</th>
     <th>Localitate</th>
     <th>Proba1</th>
-    <th>Proba2</th>
-    <th>Proba3</th>
+
       </tr>
   <?php
   $nume_candidati=filter_input(INPUT_POST, 'nume_candidati');
@@ -46,8 +45,7 @@ $scoala_candidati=filter_input(INPUT_POST, 'scoala_candidati');
 $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
 $proba1=filter_input(INPUT_POST, 'proba1');
-$proba2=filter_input(INPUT_POST, 'proba2');
-$proba3=filter_input(INPUT_POST, 'proba3');
+
 $servername = "localhost";
 				$username = "admin";
 				$password = "admin123";
@@ -65,8 +63,7 @@ $servername = "localhost";
     						echo "<td>".$row['judet_candidati']."</td>";
     							echo "<td>".$row['localitate_candidati']."</td>";
     						   	  echo "<td>".$row['proba1']."</td>";
-    						    	 echo "<td>".$row['proba2']."</td>";
-    						     		echo "<td>".$row['proba3']."</td>";
+    			
     						echo "</tr>";
 
 }

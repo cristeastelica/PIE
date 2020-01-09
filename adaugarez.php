@@ -111,10 +111,7 @@ input[type=submit]:hover {
         <input type="text" name="localitate_candidati"  required="" placeholder="Localitate candidat...">
        <label for="proba1">Proba1</label>
         <input type="text" name="proba1"  required="" placeholder="Proba1...">
-        <label for="proba2">Proba2</label>
-        <input type="text" name="proba2"  required="" placeholder="Proba2...">
-        <label for="proba3">Proba3</label>
-        <input type="text" name="proba3"  required="" placeholder="Proba3...">
+    
      
         <input type="submit" name="Adauga"  value="Adauga" onsubmit="return false">
       </form>
@@ -137,15 +134,14 @@ $scoala_candidati=filter_input(INPUT_POST, 'scoala_candidati');
 $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
 $proba1=filter_input(INPUT_POST, 'proba1');
-$proba2=filter_input(INPUT_POST, 'proba2');
-$proba3=filter_input(INPUT_POST, 'proba3');
+
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$myDB", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   
-   $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,proba1,proba2,proba3)VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','$proba1','$proba2','$proba3')";
+   $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,proba1)VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','$proba1')";
 
    $conn->query($rez);
  header('refresh:1;url=index.php');

@@ -14,7 +14,7 @@ ob_start(); // it starts buffering
 $pdf = new FPDF();
 $pdf = new FPDF();
 $pdf->AddPage('L');
-$width_cell = array(30, 30, 30, 30, 30,30,30,30,30);
+$width_cell = array(30, 30, 30, 30, 30,30,30);
 $pdf->SetFont('Arial', 'B', 16);
 $pdf->SetFillColor(193, 229, 252); // Background color of header
 // Header starts /// 
@@ -26,8 +26,6 @@ $pdf->Cell($width_cell[3], 10, 'Scoala', 1, 0, 'C', true); // Third header colum
 $pdf->Cell($width_cell[4], 10, 'Judet', 1, 0, 'C', true);
 $pdf->Cell($width_cell[5], 10, 'Localitate', 1, 0, 'C', true);
 $pdf->Cell($width_cell[6], 10, 'Proba1', 1, 0, 'C', true);
-$pdf->Cell($width_cell[7], 10, 'Proba2', 1, 0, 'C', true);
-$pdf->Cell($width_cell[8], 10, 'Proba3', 1, 1, 'C', true);
 //// header ends ///////
 $pdf->SetFont('Arial', '', 12);
 $pdf->SetFillColor(235, 236, 236); // Background color of header

@@ -95,8 +95,6 @@ $scoala_candidati=filter_input(INPUT_POST, 'scoala_candidati');
 $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
 $proba1=filter_input(INPUT_POST, 'proba1');
-$proba2=filter_input(INPUT_POST, 'proba2');
-$proba3=filter_input(INPUT_POST, 'proba3');
   $sql = "UPDATE candidati SET nume_candidati='$nume_candidati',prenume_candidati='$prenume_candidati',clasa_candidati='$clasa_candidati' , scoala_candidati='$scoala_candidati',judet_candidati='$judet_candidati',localitate_candidati='$localitate_candidati' where cod=$cod ";
   
 $conn->exec($sql);
@@ -117,8 +115,6 @@ $scoala_candidati=filter_input(INPUT_POST, 'scoala_candidati');
 $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
 $proba1=filter_input(INPUT_POST, 'proba1');
-$proba2=filter_input(INPUT_POST, 'proba2');
-$proba3=filter_input(INPUT_POST, 'proba3');
     $servername = "localhost";
     $username = "admin";
     $password = "admin123";
@@ -171,8 +167,6 @@ $conn->query($sql);
     <th>Judet</th>
     <th>Localitate</th>
     <th>Proba1</th>
-    <th>Proba2</th>
-    <th>Proba3</th>
     <th>Modifica</th>
   <?php
 
@@ -187,8 +181,6 @@ $conn->query($sql);
                         echo "<td><input type=text name=judet_candidati value=' ".$row['judet_candidati']." '></td>";
                           echo "<td><input type=text name=localitate_candidati value= ' ".$row['localitate_candidati']."'></td>";
                           echo "<td><input type=text name=proba1 value= ' ".$row['proba1']."'></td>";
-                          echo "<td><input type=text name=proba2 value= ' ".$row['proba2']."'></td>";
-                          echo "<td><input type=text name=proba3 value= ' ".$row['proba3']."'></td>";
                               echo "<td><input type=submit name='submited' value='submited'>";
                                   echo "</form>";
                                         echo "</tr>";
