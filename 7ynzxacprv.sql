@@ -122,25 +122,23 @@ CREATE TABLE `rezultate` (
   `scoala_candidati` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `localitate_candidati` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `judet_candidati` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `proba1` varchar(45) COLLATE utf8_unicode_ci DEFAULT '0',
-  `proba2` varchar(45) COLLATE utf8_unicode_ci DEFAULT '0',
-  `proba3` varchar(45) COLLATE utf8_unicode_ci DEFAULT '0'
+  `proba1` varchar(45) COLLATE utf8_unicode_ci DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `rezultate`
 --
 
-INSERT INTO `rezultate` (`cod`, `nume_candidati`, `prenume_candidati`, `clasa_candidati`, `scoala_candidati`, `localitate_candidati`, `judet_candidati`, `proba1`, `proba2`, `proba3`) VALUES
-(1, 'Cristea', 'Stelica', '12', 'Liceul nr 1', 'Braila', 'Braila', '10', '9', '9'),
-(2, 'Anton', 'Cristina', '11', 'Liceul nr 8', 'Vatra Dornei', 'Bistrita-Nasaud', '8', '8', '8'),
-(3, 'Velicu', 'Maria', '10', 'Liceul nr 9', 'Iasi', 'Iasi', '7', '7', '7'),
-(4, 'Stan', 'Marian', '9', 'Liceul Matei Basarab ', 'Braila', 'Braila', '6', '7', '8'),
-(5, 'Tudor', 'Gheorghe', '12', 'Liceul Alexandru Vlahuta', 'Bucuresti', 'Bucuresti', '5', '5', '5'),
-(6, 'Turcu', 'Antonia', '11', 'Liceul Emil Racovita', 'Tulcea', 'Tulcea', '7', '5', '9'),
-(7, 'Antohe', 'Ana', '10', 'Liceul Barbu Stefanescu', 'Bihor', 'Bihor', '10', '10', '10'),
-(93, 'Bichescu', 'Mara', '11', 'Liceul nr 7', 'vaslui', 'Vaslui', '0', '0', '0'),
-(94, 'Mircea', 'Mircea', '12', 'Liceul nr 7', 'Cluj', 'Cluj', '0', '0', '0');
+INSERT INTO `rezultate` (`cod`, `nume_candidati`, `prenume_candidati`, `clasa_candidati`, `scoala_candidati`, `localitate_candidati`, `judet_candidati`, `proba1`) VALUES
+(1, 'Cristea', 'Stelica', '12', 'Liceul nr 1', 'Braila', 'Braila', '10'),
+(2, 'Anton', 'Cristina', '11', 'Liceul nr 8', 'Vatra Dornei', 'Bistrita-Nasaud', '8'),
+(3, 'Velicu', 'Maria', '10', 'Liceul nr 9', 'Iasi', 'Iasi', '7'),
+(4, 'Stan', 'Marian', '9', 'Liceul Matei Basarab ', 'Braila', 'Braila', '6'),
+(5, 'Tudor', 'Gheorghe', '12', 'Liceul Alexandru Vlahuta', 'Bucuresti', 'Bucuresti', '5'),
+(6, 'Turcu', 'Antonia', '11', 'Liceul Emil Racovita', 'Tulcea', 'Tulcea', '7'),
+(7, 'Antohe', 'Ana', '10', 'Liceul Barbu Stefanescu', 'Bihor', 'Bihor', '10'),
+(93, 'Bichescu', 'Mara', '11', 'Liceul nr 7', 'vaslui', 'Vaslui', '0'),
+(94, 'Mircea', 'Mircea', '12', 'Liceul nr 7', 'Cluj', 'Cluj', '0');
 
 -- --------------------------------------------------------
 
