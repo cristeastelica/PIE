@@ -135,6 +135,8 @@ button:hover {
        <th>Localitate</th>
        <th>Judet</th>
        <th>Proba1</th>
+       <th>Proba2</th>
+        <th>Proba3</th>
      </div>
      </tr>
     <?php 
@@ -161,7 +163,7 @@ try {
    // output data of each row
    while($row = $result->fetch(PDO::FETCH_ASSOC)) {
     echo "<tr><td>" . $row["cod"]. "</td><td>" . $row["nume_candidati"]. "</td><td>"
-     .$row["prenume_candidati"]. "</td><td>". $row["clasa_candidati"] . "</td><td>".$row["scoala_candidati"]. "</td><td>".$row["localitate_candidati"]. "</td><td>". $row["judet_candidati"]. "</td><td>".$row["proba1"]."<td></tr>";
+     .$row["prenume_candidati"]. "</td><td>". $row["clasa_candidati"] . "</td><td>".$row["scoala_candidati"]. "</td><td>".$row["localitate_candidati"]. "</td><td>". $row["judet_candidati"]. "</td><td>".$row["proba1"]. "</td><td>".$row["proba2"]. "</td><td>".$row["proba3"]. "</td><td>"."<td></tr>";
 }
 echo "</table></div>";
 } else { echo "0 results"; }

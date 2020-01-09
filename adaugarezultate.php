@@ -82,7 +82,8 @@ $scoala_candidati=filter_input(INPUT_POST, 'scoala_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
 $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $proba1_candidati=filter_input(INPUT_POST, 'proba1');
-
+$proba2_candidati=filter_input(INPUT_POST, 'proba2');
+$proba3_candidati=filter_input(INPUT_POST, 'proba3');
 
  $servername = "localhost";
 $username = "admin";
@@ -93,8 +94,8 @@ try {
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
    $sql = "INSERT INTO
-   rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,proba1)
-    VALUES ('$nume_candidati','$prenume_candidati,'$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','$proba1')";
+   rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,proba1,proba2,proba3)
+    VALUES ('$nume_candidati','$prenume_candidati,'$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','$proba1','$proba2','$proba3')";
      // use exec() because no results are returned
     $conn->exec($sql);
    
