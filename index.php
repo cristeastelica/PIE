@@ -117,10 +117,6 @@ $(function() {
 
 </div></center>
 
-<div id="acasadiv" class="content">
-  <?php include('acasa.php') ?>
-
-</div>
 
 <div id="acasadiv" class="content">
   <?php include('acasa.php') ?>
