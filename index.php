@@ -110,8 +110,7 @@ $(function() {
 <center><div class="topnav">
 
   <a class="nav"  id ="acasa" href="#acasa">Acasa</a>
-  <a class="nav" href="#operatii" id="operatii" >Operatii Candidati</a>
-  <a class="nav" id="rezultate" href="#rezultate">Operatii Rezultate</a>
+  <a class="nav"  id ="subiecte" href="#subiecte">Subiecte</a>
   <a class ="nav" href="#contact" id="contact">Contact</a>
   <a class ="nav" href="#login" id="login">Login/Inregistrare</a>
 
@@ -123,15 +122,6 @@ $(function() {
 
 </div>
 
-<center><div id="operatiidiv" class="content">
-  <?php include('modal.php') ?>
-
-</div></center>
-
-<center><div id="rezultatediv" class="content">
-  <?php include('modal-rezultate.php') ?>
-
-</div></center>
 <div id="contactdiv" class="content">
   <?php include('contact.php') ?>
 

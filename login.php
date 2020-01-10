@@ -80,7 +80,7 @@ try {
 $message = "Autentificare cu succes! Bun venit ".$user;
 echo "<script type='text/javascript'>alert('$message');</script>";
     
-     header('refresh:1;url=index.php');
+     header('refresh:1;url=index-comisie.php');
  }else{
  	$message = "Autentificare cu succes! Bun venit ".$user;
 echo "<script type='text/javascript'>alert('$message');</script>";
