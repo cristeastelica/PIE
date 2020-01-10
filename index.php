@@ -54,7 +54,22 @@ h1 {
   text-decoration: none;
   font-size: 17px;
 }
+.topnav-right {
 
+  position: absolute;
+  right: 0px;
+
+  text-align: center;
+
+
+}
+.topnav-right a:hover {
+  background-color: #e14848;
+  color: black;
+}
+.topnav-right a.active {
+  background-color: #e14848;
+  color: white;
 .topnav a:hover {
   background-color: #ddd;
   color: black;
@@ -98,9 +113,14 @@ $(function() {
   <a class="nav" href="#operatii" id="operatii" >Operatii Candidati</a>
   <a class="nav" id="rezultate" href="#rezultate">Operatii Rezultate</a>
   <a class ="nav" href="#contact" id="contact">Contact</a>
+  <a class ="nav" href="#login" id="login">Login/Inregistrare</a>
 
 </div></center>
 
+<div id="acasadiv" class="content">
+  <?php include('acasa.php') ?>
+
+</div>
 
 <div id="acasadiv" class="content">
   <?php include('acasa.php') ?>
@@ -120,6 +140,12 @@ $(function() {
   <?php include('contact.php') ?>
 
 </div>
+</div></center>
+
+<center><div id="logindiv" class="content">
+  <?php include('paginawelcome.html') ?>
+
+</div></center>
 
 
 
