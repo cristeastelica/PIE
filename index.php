@@ -69,7 +69,8 @@ h1 {
 }
 .topnav-right a.active {
   background-color: #e14848;
-  color: white;
+  color: white;}
+  
 .topnav a:hover {
   background-color: #ddd;
   color: black;
