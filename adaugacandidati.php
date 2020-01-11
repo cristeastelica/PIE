@@ -33,19 +33,6 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-button{
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 15px;
-  border: none;
-  cursor: pointer;
-  float:right;
-}
-
-button:hover{
-  background-color: #45a049;
-}
-
 /* Style the container/contact section */
 .containeradaug {
    margin: auto;
@@ -128,7 +115,6 @@ button:hover{
         
        
         <input type="submit" id ="submitad" name="Adauga"  value="Adauga" onsubmit="return false">
-        <button type="button" onclick="window.open('', '_self', ''); window.close();">Inapoi</button>
       </form>
     </div>
   </div>
@@ -178,7 +164,5 @@ try {
     }}
 ?>
 
-    
- 
-</body> 
+</body>
 </html>

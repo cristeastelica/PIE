@@ -20,18 +20,6 @@ tr:nth-child(even) {
 body {font-family: Arial;
 height :100%;
 margin: 0;}
-
-button{
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 15px;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover{
-  background-color: #45a049;
-}
 </style>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cauta dupa nume" title="Type in a name">
 <table id="myTable"> 
@@ -100,8 +88,6 @@ function myFunction() {
 }
 
 </script>
-<center>
-    <button type="button" onclick="window.open('', '_self', ''); window.close();">Inapoi</button>
-  </center>
+
 </body>
 </html>

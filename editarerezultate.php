@@ -33,18 +33,6 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-button{
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 15px;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover{
-  background-color: #45a049;
-}
-
 /* Style the container/contact section */
 .container3{
    margin: auto;
@@ -212,10 +200,6 @@ $conn->query($sql);
       </form>
     </div>
   </div>
-
-  <center>
-    <button type="button" onclick="window.open('', '_self', ''); window.close();">Inapoi</button>
-  </center>
 </div>
 
 

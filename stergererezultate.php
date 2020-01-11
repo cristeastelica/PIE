@@ -37,18 +37,6 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-button{
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 15px;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover{
-  background-color: #45a049;
-}
-
 /* Style the container/contact section */
 .containersterge {
    margin: auto;
@@ -166,7 +154,7 @@ try {
 
 <div class="containersterge">
   <div style="text-align:center">
-    <h2>Sterge rezultate</h2>
+    <h2>Sterge candidati</h2>
     <p></p>
   </div>
   <div class="row">
@@ -213,9 +201,6 @@ try {
 </table>
       </form>
     </div>
-    <center>
-    <button type="button" onclick="window.open('', '_self', ''); window.close();">Inapoi</button>
-  </center>
   </div>
 </div>
 
