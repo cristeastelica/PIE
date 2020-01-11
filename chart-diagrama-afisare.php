@@ -17,7 +17,23 @@
 
 button:hover {
   opacity: 0.8;
-}</style>
+}
+
+.inapoi{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  cursor: pointer;
+  width:5%;
+}
+
+.inapoi:hover{
+  background-color: #45a049;
+}
+
+
+</style>
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript"
@@ -83,7 +99,7 @@ button:hover {
 	</tr>
 </table>
 </div>
-<button onclick="window.open('index.php').style.display='block'" style="width:auto;">Inapoi</button>
+	<button class ="inapoi" type="button" onclick="window.open('', '_self', ''); window.close();">Inapoi</button>
 
 </center>
 </body>
