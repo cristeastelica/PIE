@@ -37,6 +37,19 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  cursor: pointer;
+  float:right;
+}
+
+button:hover{
+  background-color: #45a049;
+}
+
 /* Style the container/contact section asd*/
 
 .container1 {
@@ -118,6 +131,7 @@ input[type=submit]:hover {
         <input type="text" name="proba3"  required="" placeholder="Proba3...">
      
         <input type="submit" name="Adauga"  value="Adauga" onsubmit="return false">
+        <button type="button" onclick="window.open('', '_self', ''); window.close();">Inapoi</button>
       </form>
     </div>
   </div>
