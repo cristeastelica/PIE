@@ -59,7 +59,11 @@ h1 {
   color: black;
   text-decoration: none;
 }
+.lstuff {
+float : right;
+background-color: #99ccff;
 
+}
 .topnav1 a.active {
   background-color: #ddd;
   color: white;
@@ -96,8 +100,9 @@ $(function() {
   <a class="nav"  id ="acasa" href="#acasa">Acasa</a>
   <a class="nav"  id ="subiecte" href="#subiecte">Subiecte</a>
   <a class ="nav" href="#contact" id="contact">Contact</a>
-  <a class ="nav" href="#login" id="login">Login/Inregistrare</a>
-
+  <div class ="lstuff">
+  <a class ="nav" href="#login" id="login">Login</a>
+ </div>
 </div>
 
 <div id="acasadiv" class="content">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <?php
+<?php
 if(!isset($_COOKIE["TestCookie"])) {
        header('refresh:1;url=index.php');
 } 
@@ -67,6 +67,7 @@ button {
   height: 40px;
   width: 70px;
   padding: 0px;
+  font-size: 15px;
   background-color: #ff5050;
 }
 

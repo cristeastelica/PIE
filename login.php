@@ -82,15 +82,17 @@ try {
 $message = "Autentificare cu succes! Bun venit ".$user;
 echo "<script type='text/javascript'>alert('$message');</script>";
 
-setcookie("TestCookie", $user);
-setcookie("TestCookie", $user, time()+3600);  /* expire in 1 hour */
-setcookie("TestCookie", $user, time()+3600, "/", "localhost", 1);
+      setcookie("TestCookie", $user);
+      setcookie("TestCookie", $user, time()+3600);  /* expire in 1 hour */
+      setcookie("TestCookie", $user, time()+3600, "/", "localhost", 1);
      header('refresh:1;url=index-comisie.php');
  }else{
  	$message = "Autentificare cu succes! Bun venit ".$user;
 echo "<script type='text/javascript'>alert('$message');</script>";
-    
-     header('refresh:1;url=index-elev.php');
+      setcookie("TestCookie", $user);
+      setcookie("TestCookie", $user, time()+3600);  /* expire in 1 hour */
+      setcookie("TestCookie", $user, time()+3600, "/", "localhost", 1);
+      header('refresh:1;url=index-elev.php');
  }
    }
    }

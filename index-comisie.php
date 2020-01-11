@@ -76,6 +76,7 @@ float: right;
   width: 70px;
   padding: 0px;
   background-color: #ff5050;
+  font-size: 15px;
 }
 .lstuff {
 float : right;
