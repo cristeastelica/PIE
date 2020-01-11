@@ -45,7 +45,30 @@ h1 {
   background-color: #333;
   border: 1px solid #ddd;
 }
+button {
+  background-color: #4CAF50;
+  display: inline-block;
+  color: white;
+  padding: 14px 20px;
+  margin: 25px 35px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 
+}
+.logoutbtn{
+  text-align: center;
+  float: right;
+  height: 40px;
+  width: 70px;
+  padding: 0px;
+  background-color: #ff5050;
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
 .topnav a {
   float: left;
   color: #ddd;
@@ -60,6 +83,7 @@ h1 {
   color: black;
 }
 
+
 .topnav a.active {
   background-color: #ddd;
   color: white;
@@ -72,6 +96,7 @@ h1 {
  <div class="container">
 
   <div class="centered">Olimpiada nationala</div>
+      <button onclick="window.open('logout.php')" class ="logoutbtn"> Logout</button>
 </div> 
 
 <style>

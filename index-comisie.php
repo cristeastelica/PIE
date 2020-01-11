@@ -4,9 +4,7 @@
 <?php
 if(!isset($_COOKIE["TestCookie"])) {
        header('refresh:1;url=index.php');
-} else {
-     echo $_COOKIE["TestCookie"];
-}
+} 
 ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
