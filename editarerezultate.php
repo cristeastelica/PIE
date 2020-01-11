@@ -100,7 +100,7 @@ $proba3=filter_input(INPUT_POST, 'proba3');
   $sql = "UPDATE rezultate SET nume_candidati='$nume_candidati',prenume_candidati='$prenume_candidati',clasa_candidati='$clasa_candidati' , scoala_candidati='$scoala_candidati',judet_candidati='$judet_candidati',localitate_candidati='$localitate_candidati',proba1='$proba1' ,proba2='$proba2' ,proba3='$proba3' where cod=$cod ";
   
 $conn->exec($sql);
-header('refresh:1;url=index.php');
+header('refresh:1;url=editarerezultate.php');
 }
 $_POST = array();
   
