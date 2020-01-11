@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Style inputs */
+/* Style inpusssssssts */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
