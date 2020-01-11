@@ -14,6 +14,7 @@ $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
 $user_candidati=filter_input(INPUT_POST, 'user_candidati');
 $parola_candidati=filter_input(INPUT_POST, 'parola_candidati');
+$materia_candidati=filter_input(INPUT_POST, 'materia_candidati')
 try {
      $conn = new PDO("mysql:host=$servername;dbname=$myDB", $username, $password);
     // set the PDO error mode to exception

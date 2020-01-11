@@ -110,7 +110,9 @@ input[type=submit]:hover {
         <input type="text" name="user_candidati"  required="" placeholder="User candidat...">
         <label for="parola">Parola</label>
         <input type="text" name="parola_candidati"  required="" placeholder="Parola candidat...">
-      
+        <label for="materia">Materia</label>
+        <input type="text" name="materia_candidati"  required="" placeholder="Materia la care participa...">
+        
        
         <input type="submit" id ="submitad" name="Adauga"  value="Adauga" onsubmit="return false">
       </form>
@@ -136,16 +138,19 @@ $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
 $user_candidati=filter_input(INPUT_POST, 'user_candidati');
 $parola_candidati=filter_input(INPUT_POST, 'parola_candidati');
+$materia_candidati=filter_input(INPUT_POST, 'materia_candidati');
+
 
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$myDB", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-   $sql = "INSERT INTO candidati (nume_candidati,prenume_candidati,adresa_candidati,telefon_candidati,email_candidati,clasa_candidati,scoala_candidati,judet_candidati,localitate_candidati,user_candidati,parola_candidati,rol_candidati)
-    VALUES ('$nume_candidati','$prenume_candidati','$adresa_candidati','$telefon_candidati','$email_candidati','$clasa_candidati','$scoala_candidati','$judet_candidati','$localitate_candidati','$user_candidati','$parola_candidati','elev')";
+   $sql = "INSERT INTO candidati (nume_candidati,prenume_candidati,adresa_candidati,telefon_candidati,email_candidati,clasa_candidati,scoala_candidati,judet_candidati,localitate_candidati,user_candidati,parola_candidati,materia) 
+   VALUES('$nume_candidati','$prenume_candidati','$adresa_candidati','$telefon_candidati','$email_candidati','$clasa_candidati','$scoala_candidati','$judet_candidati','$localitate_candidati','$user_candidati','$parola_candidati','$materia_candidati')";
    $query="INSERT INTO utilizator(user,pass,rol) VALUES('$user_candidati','$parola_candidati','elev')";
-   $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,proba1,proba2,proba3)VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','0','0','0')";
+   $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,materia,puncte,locul) 
+   VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','$materia_candidati','0','0')";
    $conn->query($sql);
    $conn->query($query);
    $conn->query($rez);

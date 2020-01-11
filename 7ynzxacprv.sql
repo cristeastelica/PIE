@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 29, 2019 at 06:21 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.2.12
+-- Generation Time: Jan 11, 2020 at 03:05 PM
+-- Server version: 10.1.39-MariaDB
+-- PHP Version: 7.3.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -41,20 +41,15 @@ CREATE TABLE `candidati` (
   `localitate_candidati` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `user_candidati` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `parola_candidati` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `rol_candidati` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL
+  `materia` varchar(12) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `candidati`
 --
 
-INSERT INTO `candidati` (`cod`, `nume_candidati`, `prenume_candidati`, `adresa_candidati`, `telefon_candidati`, `email_candidati`, `clasa_candidati`, `scoala_candidati`, `judet_candidati`, `localitate_candidati`, `user_candidati`, `parola_candidati`, `rol_candidati`) VALUES
-(1, 'Cristea', 'Stelica', 'strada Eroilor nr 9', '0796321456', 'cris@yahoo.com', '12', 'Liceul nr 1', 'Braila', 'Braila', 'stelica', 'stelica', 'elev'),
-(2, 'Anton', 'Cristina', 'Strada Republicii nr 80', '0741203120', 'antonc@yahoo.com', '11', 'Liceul nr 8', 'Bistrita-Nasaud', 'Vatra Dornei', 'cristina', 'cristina', 'elev'),
-(3, 'Velicu', 'Maria', 'Strada Basarabiei nr 6', '0853214569', 'mariav@yahoo.com', '10', 'Liceul nr 9', 'Iasi', 'Iasi', 'maria', 'maria', 'elev'),
-(4, 'Stan', 'Marian', 'Strada Domneasca nr 155', '0745362145', 'sm@yahoo.com', '9', 'Liceul Matei Basarab', 'Braila', 'Braila', 'marian', 'marian', 'elev'),
-(5, 'Tudor', 'Gheorghe', 'Strada Garii nr 7', '0753210321', 'gh@yahoo.com', '12', 'Liceul Alexandru Vlahuta', 'Bucuresti', 'Bucuresti', 'gheorghe', 'gheorghe', 'elev'),
-(6, 'Turcu', 'Antonia', 'Strada Sperantei nr 9', '07458965478', 'antonia@gmai.com', '11', 'Liceul Emil Racovita', 'Tulcea', 'Tulcea', 'antonia', 'antonia', 'elev');
+INSERT INTO `candidati` (`cod`, `nume_candidati`, `prenume_candidati`, `adresa_candidati`, `telefon_candidati`, `email_candidati`, `clasa_candidati`, `scoala_candidati`, `judet_candidati`, `localitate_candidati`, `user_candidati`, `parola_candidati`, `materia`) VALUES
+(9, 'gwrgrnt', 'rgbrg', 'rfrg', '0779854788', 'sr@gmail.com', 'fbrb', 'f', 'rwg', 'sf', 'a', 'a', 'romana');
 
 -- --------------------------------------------------------
 
@@ -122,25 +117,17 @@ CREATE TABLE `rezultate` (
   `scoala_candidati` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `localitate_candidati` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `judet_candidati` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `proba1` varchar(45) COLLATE utf8_unicode_ci DEFAULT '0',
-  `proba2` varchar(45) COLLATE utf8_unicode_ci DEFAULT '0',
-  `proba3` varchar(45) COLLATE utf8_unicode_ci DEFAULT '0'
+  `materia` varchar(45) COLLATE utf8_unicode_ci DEFAULT '0',
+  `puncte` varchar(12) COLLATE utf8_unicode_ci DEFAULT '0',
+  `locul` varchar(45) COLLATE utf8_unicode_ci DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `rezultate`
 --
 
-INSERT INTO `rezultate` (`cod`, `nume_candidati`, `prenume_candidati`, `clasa_candidati`, `scoala_candidati`, `localitate_candidati`, `judet_candidati`, `proba1`, `proba2`, `proba3`) VALUES
-(1, 'Cristea', 'Stelica', '12', 'Liceul nr 1', 'Braila', 'Braila', '10', '9', '9'),
-(2, 'Anton', 'Cristina', '11', 'Liceul nr 8', 'Vatra Dornei', 'Bistrita-Nasaud', '8', '8', '8'),
-(3, 'Velicu', 'Maria', '10', 'Liceul nr 9', 'Iasi', 'Iasi', '7', '7', '7'),
-(4, 'Stan', 'Marian', '9', 'Liceul Matei Basarab ', 'Braila', 'Braila', '6', '7', '8'),
-(5, 'Tudor', 'Gheorghe', '12', 'Liceul Alexandru Vlahuta', 'Bucuresti', 'Bucuresti', '5', '5', '5'),
-(6, 'Turcu', 'Antonia', '11', 'Liceul Emil Racovita', 'Tulcea', 'Tulcea', '7', '5', '9'),
-(7, 'Antohe', 'Ana', '10', 'Liceul Barbu Stefanescu', 'Bihor', 'Bihor', '10', '10', '10'),
-(93, 'Bichescu', 'Mara', '11', 'Liceul nr 7', 'vaslui', 'Vaslui', '0', '0', '0'),
-(94, 'Mircea', 'Mircea', '12', 'Liceul nr 7', 'Cluj', 'Cluj', '0', '0', '0');
+INSERT INTO `rezultate` (`cod`, `nume_candidati`, `prenume_candidati`, `clasa_candidati`, `scoala_candidati`, `localitate_candidati`, `judet_candidati`, `materia`, `puncte`, `locul`) VALUES
+(97, 'gwrgrnt', 'rgbrg', 'fbrb', 'f', 'sf', 'rwg', 'romana', '0', '0');
 
 -- --------------------------------------------------------
 
@@ -170,7 +157,10 @@ INSERT INTO `utilizator` (`cod`, `user`, `pass`, `rol`) VALUES
 (8, 'comisie2', 'comisie2', 'comisie'),
 (9, 'comisie3', 'comisie3', 'comisie'),
 (125, 'mara', 'mara', 'elev'),
-(126, 'mircea', 'mircea', 'elev');
+(126, 'mircea', 'mircea', 'elev'),
+(127, 'stelica', 'parola123', 'elev'),
+(128, 'stel', 'stel', 'elev'),
+(129, 'a', 'a', 'elev');
 
 --
 -- Indexes for dumped tables
@@ -214,31 +204,31 @@ ALTER TABLE `utilizator`
 -- AUTO_INCREMENT for table `candidati`
 --
 ALTER TABLE `candidati`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=167;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `comisie`
 --
 ALTER TABLE `comisie`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `cod` int(45) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29125;
+  MODIFY `cod` int(45) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `rezultate`
 --
 ALTER TABLE `rezultate`
-  MODIFY `cod` int(45) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
+  MODIFY `cod` int(45) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
 
 --
 -- AUTO_INCREMENT for table `utilizator`
 --
 ALTER TABLE `utilizator`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
