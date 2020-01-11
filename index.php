@@ -15,7 +15,7 @@ body {
   font-family: Arial;
   margin: 0;
 }
-.container {
+.containerindex {
   position: relative;
   text-align: center;
   font-size: 60px;
@@ -40,13 +40,13 @@ body {
 h1 {
   text-align: center;
 }
-.topnav {
+.topnav1 {
   overflow: hidden;
   background-color: #333;
   border: 1px solid #ddd;
 }
 
-.topnav a {
+.topnav1 a {
   float: left;
   color: #ddd;
   text-align: center;
@@ -54,29 +54,13 @@ h1 {
   text-decoration: none;
   font-size: 17px;
 }
-.topnav-right {
-
-  position: absolute;
-  right: 0px;
-
-  text-align: center;
-
-
-}
-.topnav-right a:hover {
-  background-color: #e14848;
-  color: black;
-}
-.topnav-right a.active {
-  background-color: #e14848;
-  color: white;}
-  
-.topnav a:hover {
+.topnav1 a:hover {
   background-color: #ddd;
   color: black;
+  text-decoration: none;
 }
 
-.topnav a.active {
+.topnav1 a.active {
   background-color: #ddd;
   color: white;
 }
@@ -85,7 +69,7 @@ h1 {
 
 </div>
 <head>
- <div class="container">
+ <div class="containerindex">
 
   <div class="centered">Olimpiada nationala</div>
 </div> 
@@ -108,7 +92,7 @@ $(function() {
 
 
 
-<center><div class="topnav">
+<center><div class="topnav1">
 
   <a class="nav"  id ="acasa" href="#acasa">Acasa</a>
   <a class="nav"  id ="subiecte" href="#subiecte">Subiecte</a>
@@ -127,6 +111,10 @@ $(function() {
   <?php include('contact.php') ?>
 
 </div>
+
+<center><div id="subiectediv" class="content">
+  <?php include('home-subiecte.php') ?>
+
 </div></center>
 
 <center><div id="logindiv" class="content">
