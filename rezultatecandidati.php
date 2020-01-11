@@ -27,9 +27,9 @@ button{
   padding: 12px 15px;
   border: none;
   margin-top: 20px;
-  margin-left: -14px;
+
   cursor: pointer;
-  float: left;
+
 }
 
 button:hover{

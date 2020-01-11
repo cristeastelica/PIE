@@ -132,6 +132,7 @@ $(function() {
   <a class="nav"  id ="acasa" href="#acasa">Acasa</a>
   <a class="nav" href="#operatii" id="operatii" >Operatii Candidati</a>
   <a class="nav" id="rezultate" href="#rezultate">Operatii Rezultate</a>
+    <a class="nav" id="arhiva" href="#arhiva">Arhiva</a>
   <a class ="nav" href="#contact" id="contact">Contact</a>
   <div class ="lstuff">
 
@@ -153,6 +154,10 @@ $(function() {
 
 <center><div id="rezultatediv" class="content">
   <?php include('modal-rezultate.php') ?>
+
+</div></center>
+<center><div id="arhivadiv" class="content">
+  <?php include('arhiva.php') ?>
 
 </div></center>
 <div id="contactdiv" class="content">

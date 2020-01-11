@@ -16,6 +16,17 @@ input[type=text] {
   transition: 0.5s;
   outline: none;
 }
+select{
+  width: 15%;
+  padding: 12px 20px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
 
 input[type=text]:focus {
   border: 3px solid #555;
@@ -68,20 +79,21 @@ input[type=phone]:focus {
 <input type="phone" class="form-control rounded-right" placeholder="Telefon" name="telefon_candidati" pattern="[0-9]{10}" title="Doar cifre" maxlength="10" size="30" required=""><br><br>
 
 <input type="text" name="email_candidati" placeholder="Email" required /><br><br>
-
 <input    type="text" name="clasa_candidati" placeholder="Clasa" maxlength="2" required /><br><br>
-
 <input   type="text" name="scoala_candidati" placeholder="Scoala" required/><br><br>
-
 <input   type="text" name="judet_candidati"placeholder="Judet" required /><br><br>
-
 <input  type="text" name="localitate_candidati" placeholder="Localitate" required /><br><br>
-
 <input    type="text" name="user_candidati" placeholder="User" required /><br><br>
-
 <input  type="password" name="parola_candidati" placeholder="Parola" required /><br><br>
+<br>
+<select>
+  <option value="Romana">Romana</option>
+  <option value="Biologie">Biologie</option>
+  <option value="Matematica">Matematica</option>
+</select></br>
+<br>
 <input type="submit" class="submit" name="submit"  value="submit" onsubmit="return false">
-
+</
 </center>
 <?php 
 if ( isset( $_POST['submit'] ) ) { 
@@ -105,10 +117,10 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=$myDB", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-   $sql = "INSERT INTO candidati (nume_candidati,prenume_candidati,adresa_candidati,telefon_candidati,email_candidati,clasa_candidati,scoala_candidati,judet_candidati,localitate_candidati,user_candidati,parola_candidati,rol_candidati)
-    VALUES ('$nume_candidati','$prenume_candidati','$adresa_candidati','$telefon_candidati','$email_candidati','$clasa_candidati','$scoala_candidati','$judet_candidati','$localitate_candidati','$user_candidati','$parola_candidati','elev')";
-   $query="INSERT INTO utilizator(user,pass,rol) VALUES('$user_candidati','$parola_candidati','elev')";
-   $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,proba1,proba2,proba3)VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','0','0','0')";
+   $sql = "INSERT INTO candidati (nume_candidati,prenume_candidati,adresa_candidati,telefon_candidati,email_candidati,clasa_candidati,scoala_candidati,judet_candidati,localitate_candidati,user_candidati,parola_candidati,materia)
+    VALUES ('$nume_candidati','$prenume_candidati','$adresa_candidati','$telefon_candidati','$email_candidati','$clasa_candidati','$scoala_candidati','$judet_candidati','$localitate_candidati','$user_candidati','$parola_candidati')";
+   $query="INSERT INTO utilizator(user,pass,rol) VALUES('$user_candidati','$parola_candidati')";
+   $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati)VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati')";
 
     // use exec() because no results are returned
     $conn->exec($sql);
