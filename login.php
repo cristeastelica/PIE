@@ -58,10 +58,12 @@ input[type=password]:focus {
   </center>        
 
 <?php 
+
 if ( isset( $_POST['submit'] ) ) { 
 
 $user=filter_input(INPUT_POST, 'user');
 $pass=filter_input(INPUT_POST, 'pass');
+
 $rol=filter_input(INPUT_POST, 'rol');
  $servername = "localhost";
 $username = "admin";
@@ -79,7 +81,10 @@ try {
  
 $message = "Autentificare cu succes! Bun venit ".$user;
 echo "<script type='text/javascript'>alert('$message');</script>";
-    
+
+setcookie("TestCookie", $user);
+setcookie("TestCookie", $user, time()+3600);  /* expire in 1 hour */
+setcookie("TestCookie", $user, time()+3600, "/", "localhost", 1);
      header('refresh:1;url=index-comisie.php');
  }else{
  	$message = "Autentificare cu succes! Bun venit ".$user;

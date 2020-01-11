@@ -2,9 +2,6 @@
 <html>
 <head>
 
-
-
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -18,11 +15,13 @@ body {
 /* Style inputs */
 input[type=text], select, textarea {
   width: 100%;
+ align-self: 
   padding: 12px;
   border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+
 }
 
 input[type=submit] {
@@ -42,6 +41,7 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px;
+  text-align: left;
 }
 
 /* Create two columns that float next to eachother */
@@ -50,6 +50,11 @@ input[type=submit]:hover {
   width: 50%;
   margin-top: 6px;
   padding: 20px;
+
+}
+
+.label {
+  text-align: left;
 }
 
 /* Clear floats after the columns */
@@ -57,6 +62,7 @@ input[type=submit]:hover {
   content: "";
   display: table;
   clear: both;
+    text-align: left;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */

@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<?php
+if(!isset($_COOKIE["TestCookie"])) {
+       header('refresh:1;url=index.php');
+} else {
+     echo $_COOKIE["TestCookie"];
+}
+?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 
 body {
   margin: 0;
@@ -63,6 +71,18 @@ h1 {
 
 
 }
+.logoutbtn{
+  text-align: center;
+float: right;
+  height: 40px;
+  width: 70px;
+  padding: 0px;
+  background-color: #ff5050;
+}
+.lstuff {
+float : right;
+
+}
 .topnav-right a:hover {
   background-color: #e14848;
   color: black;
@@ -87,6 +107,7 @@ h1 {
  <div class="container">
 
   <div class="centered">Olimpiada nationala</div>
+    <button onclick="window.open('logout.php')" class ="logoutbtn"> Logout</button>
 </div> 
 
 <style>
@@ -113,7 +134,10 @@ $(function() {
   <a class="nav" href="#operatii" id="operatii" >Operatii Candidati</a>
   <a class="nav" id="rezultate" href="#rezultate">Operatii Rezultate</a>
   <a class ="nav" href="#contact" id="contact">Contact</a>
-  <a class ="nav" href="#login" id="login">Login/Inregistrare</a>
+  <div class ="lstuff">
+
+
+</div>
 
 </div></center>
 
@@ -138,10 +162,6 @@ $(function() {
 </div>
 </div></center>
 
-<center><div id="logindiv" class="content">
-  <?php include('paginawelcome.html') ?>
-
-</div></center>
 
 
 

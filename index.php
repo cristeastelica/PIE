@@ -80,8 +80,7 @@ h1 {
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><script>
 $(function() {
   $(".nav").on("click",function(e) {
-    e.preventDefault();
-    $(".content").hide();
+     $(".content").hide();
     $("#"+this.id+"div").show();
   });
 });
@@ -92,15 +91,14 @@ $(function() {
 
 
 
-<center><div class="topnav1">
+<div class="topnav1">
 
   <a class="nav"  id ="acasa" href="#acasa">Acasa</a>
   <a class="nav"  id ="subiecte" href="#subiecte">Subiecte</a>
   <a class ="nav" href="#contact" id="contact">Contact</a>
   <a class ="nav" href="#login" id="login">Login/Inregistrare</a>
 
-</div></center>
-
+</div>
 
 <div id="acasadiv" class="content">
   <?php include('acasa.php') ?>
@@ -112,10 +110,10 @@ $(function() {
 
 </div>
 
-<center><div id="subiectediv" class="content">
+<div id="subiectediv" class="content">
   <?php include('home-subiecte.php') ?>
 
-</div></center>
+</div>
 
 <center><div id="logindiv" class="content">
   <?php include('paginawelcome.html') ?>
