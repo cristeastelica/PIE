@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <?php
+if(!isset($_COOKIE["TestCookie"])) {
+       header('refresh:1;url=index.php');
+} 
+?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
