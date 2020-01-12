@@ -4,8 +4,8 @@ if (!file_exists('fpdf.php')) {
     exit;
 }
 
-require('fpdf.php');
-require('connection.php');
+require_once('fpdf.php');
+require_once('connection.php');
 $database= new Connection();
 $db=$database->openConnection();
 $count="select * from rezultate";
@@ -48,7 +48,7 @@ foreach ($db->query($count) as $row) {
 }
 $currentyear = date("Y");
 $currentmonth = date('M');
-$filename="rezultate_$currentmonth$currentyear.pdf";
-$pdf->Output($filename,'D');
+$filename="arhiva/RezultateOlimpiada$currentmonth$currentyear.pdf";
+$pdf->Output($filename,'F');
 ob_end_flush(); 
 ?>

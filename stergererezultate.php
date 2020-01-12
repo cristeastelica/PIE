@@ -94,9 +94,9 @@ $clasa_candidati=filter_input(INPUT_POST, 'clasa_candidati');
 $scoala_candidati=filter_input(INPUT_POST, 'scoala_candidati');
 $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
-$proba1=filter_input(INPUT_POST, 'proba1');
-$proba2=filter_input(INPUT_POST, 'proba2');
-$proba3=filter_input(INPUT_POST, 'proba3');
+$proba1=filter_input(INPUT_POST, 'materia');
+$proba2=filter_input(INPUT_POST, 'puncte');
+$proba3=filter_input(INPUT_POST, 'locul');
     $servername = "localhost";
     $username = "admin";
     $password = "admin123";
@@ -108,7 +108,7 @@ try {
       // use exec() because no results are returned
       $sql = "DELETE FROM rezultate WHERE cod= '$cod' ";
       $conn->exec($sql);
-header('refresh:1;url=index.php');
+      header('refresh:1;url=index.php');
     }catch(PDOException $e)
     {
         
@@ -133,9 +133,9 @@ $clasa_candidati=filter_input(INPUT_POST, 'clasa_candidati');
 $scoala_candidati=filter_input(INPUT_POST, 'scoala_candidati');
 $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
-$proba1=filter_input(INPUT_POST, 'proba1');
-$proba2=filter_input(INPUT_POST, 'proba2');
-$proba3=filter_input(INPUT_POST, 'proba3');
+$proba1=filter_input(INPUT_POST, 'materia');
+$proba2=filter_input(INPUT_POST, 'puncte');
+$proba3=filter_input(INPUT_POST, 'locul');
     $servername = "localhost";
     $username = "admin";
     $password = "admin123";
@@ -184,9 +184,9 @@ try {
     <th>Scoala</th>
     <th>Judet</th>
     <th>Localitate</th>
-    <th>Proba1</th>
-    <th>Proba2</th>
-    <th>Proba3</th>
+    <th>Materia</th>
+    <th>Puncte</th>
+    <th>Locul</th>
     <th>Sterge</th>
   <?php
 
@@ -200,9 +200,9 @@ try {
                       echo "<td><input type=text name=scoala_candidati value=  ' ".$row['scoala_candidati']."'></td>";
                         echo "<td><input type=text name=judet_candidati value=' ".$row['judet_candidati']." '></td>";
                           echo "<td><input type=text name=localitate_candidati value= ' ".$row['localitate_candidati']."'></td>";
-                          echo "<td><input type=text name=proba1 value= ' ".$row['proba1']."'></td>";
-                          echo "<td><input type=text name=proba2 value= ' ".$row['proba2']."'></td>";
-                          echo "<td><input type=text name=proba3 value= ' ".$row['proba3']."'></td>";
+                          echo "<td><input type=text name=materia value= ' ".$row['materia']."'></td>";
+                          echo "<td><input type=text name=puncte value= ' ".$row['puncte']."'></td>";
+                          echo "<td><input type=text name=locul value= ' ".$row['locul']."'></td>";
                               echo "<td><input type=submit name='Sterge' value='Sterge'>";
                                   echo "</form>";
                                         echo "</tr>";

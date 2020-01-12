@@ -4,8 +4,8 @@ if (!file_exists('fpdf.php')) {
     exit;
 }
 
-require('fpdf.php');
-require('connection.php');
+require_once('fpdf.php');
+require_once('connection.php');
 $database= new Connection();
 $db=$database->openConnection();
 $count="select * from candidati";
@@ -40,6 +40,6 @@ foreach ($db->query($count) as $row) {
 }
 $currentyear = date("Y");
 $currentmonth = date('M');
-$filename="candidati_$currentmonth$currentyear.pdf";
-$pdf->Output($filename,'D');
+$filename="arhiva/CandidatiOlimpiada$currentmonth$currentyear.pdf";
+$pdf->Output($filename,'F');
 ?>

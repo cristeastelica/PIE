@@ -96,7 +96,7 @@ margin: 0;}
 					Matematica
 				</button>
 						<button type="submit" id="matematica_clasa5" name="matematica_clasa5" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/matematica/clasa a 5-a.pdf">
+							<a href="subiecte/matematica/clasa5.pdf">
 							<style type="text/css">
 								#matematica_clasa5:hover{cursor:pointer;}
 							</style>
@@ -105,7 +105,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="matematica_clasa6" name="matematica_clasa6" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/matematica/clasa a 6-a.pdf">
+							<a href="subiecte/matematica/clasa6.pdf">
 							<style type="text/css">
 								#matematica_clasa6:hover{cursor:pointer;}
 							</style>
@@ -114,7 +114,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="matematica_clasa7" name="matematica_clasa7" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/matematica/clasa a 7-a.pdf">
+							<a href="subiecte/matematica/clasa7.pdf">
 							<style type="text/css">
 								#matematica_clasa7:hover{cursor:pointer;}
 							</style>
@@ -123,7 +123,7 @@ margin: 0;}
 						</button>
 					
 						<button type="submit" id="matematica_clasa8" name="matematica_clasa8" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/matematica/clasa a 8-a.pdf">
+							<a href="subiecte/matematica/clasa8.pdf">
 							<style type="text/css">
 								#matematica_clasa8:hover{cursor:pointer;}
 							</style>
@@ -132,7 +132,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="matematica_clasa9" name="matematica_clasa9" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/matematica/clasa a 9-a.pdf">
+							<a href="subiecte/matematica/clasa9.pdf">
 							<style type="text/css">
 								#matematica_clasa9:hover{cursor:pointer;}
 							</style>
@@ -141,7 +141,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="matematica_clasa10" name="matematica_clasa10" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/matematica/clasa a 10-a.pdf">
+							<a href="subiecte/matematica/clasa10.pdf">
 							<style type="text/css">
 								#matematica_clasa10:hover{cursor:pointer;}
 							</style>
@@ -150,7 +150,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="matematica_clasa11" name="matematica_clasa11" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/matematica/clasa a 11-a.pdf">
+							<a href="subiecte/matematica/clasa11.pdf">
 							<style type="text/css">
 								#matematica_clasa11:hover{cursor:pointer;}
 							</style>
@@ -159,7 +159,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="matematica_clasa12" name="matematica_clasa12" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/matematica/clasa a 12-a.pdf">
+							<a href="subiecte/matematica/clasa12.pdf">
 							<style type="text/css">
 								#matematica_clasa12:hover{cursor:pointer;}
 							</style>

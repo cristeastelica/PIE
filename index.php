@@ -61,7 +61,7 @@ h1 {
 }
 .lstuff {
 float : right;
-background-color: #99ccff;
+background-color: #6666ff;
 
 }
 .topnav1 a.active {

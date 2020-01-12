@@ -6,7 +6,7 @@
     <title>Table Dropdown Filter</title>
     <link href="w3.css" rel="stylesheet"/>
     <style>
-        .containernou{width:960px;margin:30px auto;}
+        .containernou{width:960px;margin: auto;}
         thead select{border: 1px solid #ffffff;width:100%;}
     </style>
 </head>
