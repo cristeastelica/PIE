@@ -86,7 +86,7 @@ input[type=phone]:focus {
 <input    type="text" name="user_candidati" placeholder="User" required /><br><br>
 <input  type="password" name="parola_candidati" placeholder="Parola" required /><br><br>
 <br>
-<select>
+<select name ="materia">
   <option value="Romana">Romana</option>
   <option value="Biologie">Biologie</option>
   <option value="Matematica">Matematica</option>
@@ -108,7 +108,8 @@ $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
 $user_candidati=filter_input(INPUT_POST, 'user_candidati');
 $parola_candidati=filter_input(INPUT_POST, 'parola_candidati');
- $servername = "localhost";
+$materia= $_POST['materia'];
+$servername = "localhost";
 $username = "admin";
 $password = "admin123";
 $myDB="7YNzXacPRV";
@@ -117,19 +118,20 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=$myDB", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-   $sql = "INSERT INTO candidati (nume_candidati,prenume_candidati,adresa_candidati,telefon_candidati,email_candidati,clasa_candidati,scoala_candidati,judet_candidati,localitate_candidati,user_candidati,parola_candidati,materia)
-    VALUES ('$nume_candidati','$prenume_candidati','$adresa_candidati','$telefon_candidati','$email_candidati','$clasa_candidati','$scoala_candidati','$judet_candidati','$localitate_candidati','$user_candidati','$parola_candidati')";
-   $query="INSERT INTO utilizator(user,pass,rol) VALUES('$user_candidati','$parola_candidati')";
+   $sql = "INSERT INTO candidati(nume_candidati ,prenume_candidati ,adresa_candidati ,telefon_candidati ,email_candidati ,clasa_candidati ,scoala_candidati ,judet_candidati ,localitate_candidati ,user_candidati, parola_candidati,materia)
+    VALUES('$nume_candidati','$prenume_candidati','$adresa_candidati','$telefon_candidati','$email_candidati','$clasa_candidati','$scoala_candidati','$judet_candidati','$localitate_candidati','$user_candidati','$parola_candidati','$materia')";
+
+   $query="INSERT INTO utilizator(user,pass,rol) VALUES('$user_candidati','$parola_candidati','elev')";
    $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati)VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati')";
 
     // use exec() because no results are returned
     $conn->exec($sql);
     $conn->exec($query);
-       $conn->exec($rez);
-$message = "Autentificare cu succes! Bun venit ".$user_candidati;
-echo "<script type='text/javascript'>alert('$message');</script>";
-    
-     header('refresh:1;url=login.php');
+    $conn->exec($rez);
+	$message = "Autentificare cu succes! Bun venit ".$user_candidati;
+	echo "<script type='text/javascript'>alert('$message');</script>";
+    header('refresh:1;url=index-elev.php');
+
    }
 catch(PDOException $e)
     {
