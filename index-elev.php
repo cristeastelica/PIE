@@ -10,9 +10,12 @@ function FunctionAcasa() {
 
   
 <?php
+$utype = "";
 if(!isset($_COOKIE["TestCookie"])) {
        header('refresh:1;url=index.php');
-} 
+}else{
+  $utype= $_COOKIE["TestCookie"];
+}
 ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -163,7 +166,7 @@ $(function() {
 </center>
 <center>
 <div id="rezultatediv" class="content3">
-  <?php include('rezultatecandidati.php') ?>
+  <?php include('rezultatatecandelev.php') ?>
 </div>
 </center>
 <div id="faqdiv" class="content3">

@@ -242,7 +242,7 @@ try {
    $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,materia,puncte,locul)VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','$materia','$puncte','$locul')";
 
    $conn->query($rez);
- header('refresh:1;url=adaugarez.php');
+
     }catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();

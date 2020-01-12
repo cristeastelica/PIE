@@ -176,7 +176,7 @@ margin: 0;}
 					Romana
 				</button>
 						<button type="submit" id="Romana_clasa5" name="Romana_clasa5" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/romana/clasa a 5-a.pdf">
+							<a href="subiecte/romana/clasa5.pdf">
 							<style type="text/css">
 								#Romana_clasa5:hover{cursor:pointer;}
 							</style>
@@ -185,7 +185,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Romana_clasa6" name="Romana_clasa6" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/romana/clasa a 6-a.pdf">
+							<a href="subiecte/romana/clasa6.pdf">
 							<style type="text/css">
 								#Romana_clasa6:hover{cursor:pointer;}
 							</style>
@@ -194,7 +194,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Romana_clasa7" name="Romana_clasa7" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/romana/clasa a 7-a.pdf">
+							<a href="subiecte/romana/clasa7.pdf">
 							<style type="text/css">
 								#Romana_clasa7:hover{cursor:pointer;}
 							</style>
@@ -203,7 +203,7 @@ margin: 0;}
 						</button>
 					
 						<button type="submit" id="Romana_clasa8" name="Romana_clasa8" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/romana/clasa a 8-a.pdf">
+							<a href="subiecte/romana/clasa8.pdf">
 							<style type="text/css">
 								#Romana_clasa8:hover{cursor:pointer;}
 							</style>
@@ -212,7 +212,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Romana_clasa9" name="Romana_clasa9" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/romana/clasa a 9-a.pdf">
+							<a href="subiecte/romana/clasa9.pdf">
 							<style type="text/css">
 								#Romana_clasa9:hover{cursor:pointer;}
 							</style>
@@ -221,7 +221,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Romana_clasa10" name="Romana_clasa10" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/romana/clasa a 10-a.pdf">
+							<a href="subiecte/romana/clasa10.pdf">
 							<style type="text/css">
 								#Romana_clasa10:hover{cursor:pointer;}
 							</style>
@@ -230,7 +230,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Romana_clasa11" name="Romana_clasa11" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/romana/clasa a 11-a.pdf">
+							<a href="subiecte/romana/clasa11.pdf">
 							<style type="text/css">
 								#Romana_clasa11:hover{cursor:pointer;}
 							</style>
@@ -239,7 +239,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Romana_clasa12" name="Romana_clasa12" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/romana/clasa a 12-a.pdf">
+							<a href="subiecte/romana/clasa12.pdf">
 							<style type="text/css">
 								#Romana_clasa12:hover{cursor:pointer;}
 							</style>
@@ -255,7 +255,7 @@ margin: 0;}
 					Biologie
 				</button>
 						<button type="submit" id="Biologie_clasa5" name="Biologie_clasa5" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/biologie/clasa a 5-a.pdf">
+							<a href="subiecte/biologie/clasa5.pdf">
 							<style type="text/css">
 								#Biologie_clasa5:hover{cursor:pointer;}
 							</style>
@@ -264,7 +264,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Biologie_clasa6" name="Biologie_clasa6" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/biologie/clasa a 6-a.pdf">
+							<a href="subiecte/biologie/clasa6.pdf">
 							<style type="text/css">
 								#Biologie_clasa6:hover{cursor:pointer;}
 							</style>
@@ -273,7 +273,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Biologie_clasa7" name="Biologie_clasa7" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/biologie/clasa a 7-a.pdf">
+							<a href="subiecte/biologie/clasa7.pdf">
 							<style type="text/css">
 								#Biologie_clasa7:hover{cursor:pointer;}
 							</style>
@@ -282,7 +282,7 @@ margin: 0;}
 						</button>
 					
 						<button type="submit" id="Biologie_clasa8" name="Biologie_clasa8" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/biologie/clasa a 8-a.pdf">
+							<a href="subiecte/biologie/clasa8.pdf">
 							<style type="text/css">
 								#Biologie_clasa8:hover{cursor:pointer;}
 							</style>
@@ -291,7 +291,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Biologie_clasa9" name="Biologie_clasa9" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/biologie/clasa a 9-a.pdf">
+							<a href="subiecte/biologie/clasa9.pdf">
 							<style type="text/css">
 								#Biologie_clasa9:hover{cursor:pointer;}
 							</style>
@@ -300,7 +300,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Biologie_clasa10" name="Biologie_clasa10" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/biologie/clasa a 10-a.pdf">
+							<a href="subiecte/biologie/clasa10.pdf">
 							<style type="text/css">
 								#Biologie_clasa10:hover{cursor:pointer;}
 							</style>
@@ -309,7 +309,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Biologie_clasa11" name="Biologie_clasa11" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/biologie/clasa a 11-a.pdf">
+							<a href="subiecte/biologie/clasa11.pdf">
 							<style type="text/css">
 								#Biologie_clasa11:hover{cursor:pointer;}
 							</style>
@@ -318,7 +318,7 @@ margin: 0;}
 						</button>
 						
 						<button type="submit" id="Biologie_clasa12" name="Biologie_clasa12" class="list-group-item" style="width:150px; color:#3498DB;">
-							<a href="subiecte/biologie/clasa a 12-a.pdf">
+							<a href="subiecte/biologie/clasa12.pdf">
 							<style type="text/css">
 								#Biologie_clasa12:hover{cursor:pointer;}
 							</style>

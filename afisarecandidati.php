@@ -51,6 +51,7 @@ button:hover{
     <th>Scoala</th>
     <th>Judet</th>
     <th>Localitate</th>
+    <th>Materia</th>
    
       </tr>
   <?php
@@ -63,6 +64,7 @@ $clasa_candidati=filter_input(INPUT_POST, 'clasa_candidati');
 $scoala_candidati=filter_input(INPUT_POST, 'scoala_candidati');
 $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
+$localitate_candidati=filter_input(INPUT_POST, 'materia');
 
 $servername = "localhost";
 				$username = "admin";
@@ -80,7 +82,7 @@ $servername = "localhost";
     					echo "<td>".$row['scoala_candidati']."</td>";
     						echo "<td>".$row['judet_candidati']."</td>";
     							echo "<td>".$row['localitate_candidati']."</td>";
-    						 
+    						    echo "<td>".$row['materia']."</td>";
     						echo "</tr>";
 
 }

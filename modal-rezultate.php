@@ -135,7 +135,7 @@ span.psw {
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("#div1").load("filtrarecandidati.php");
+    $("#div1").load("rezultatecandidati.php");
   });
 });
 </script>
@@ -145,10 +145,8 @@ $(document).ready(function(){
 <button onclick="window.open('stergererezultate.php').style.display='block'" style="width:auto;">Sterge rezultate</button>
 <button onclick="window.open('chart-diagrama-afisare.php').style.display='block'" style="width:auto;">Chart rezultate</button>
 <button onclick="window.open('pdf-rezultate.php').style.display='block'" style="width:auto;">Export PDF</button>
+<button class="masterclass"style.display='block' style="width:auto;">Reset Filter</button>
 <br></br>
-
-
-<?php include('rezultatecandidati.php')?>
 <div id="div1"><h2></h2></div>
 
 
