@@ -59,12 +59,11 @@ button:hover {
 
 			var data = new google.visualization.DataTable();
 			data.addColumn('string', 'Nume');
-			data.addColumn('number', 'Proba1');
-			data.addColumn('number', 'Proba2');
-			data.addColumn('number', 'Proba3');
+			data.addColumn('number', 'clasa_candidati');
+			data.addColumn('number', 'puncte');
 			var dataArray = [];
 			$.each(result, function(i, obj) {
-				dataArray.push([ obj.nume_candidati, parseInt(obj.proba1),parseInt(obj.proba2) ,parseInt(obj.proba3)  ]);
+				dataArray.push([ obj.nume_candidati, parseInt(obj.clasa_candidati),parseInt(obj.puncte)  ]);
 			});
 
 			data.addRows(dataArray);
@@ -72,10 +71,10 @@ button:hover {
 	
 
 			var barchart_options = {
-				title : 'Note Candidati',
-				width : 1000,
+				title : 'puncte Candidati',
+				width : 1400,
 				height : 600,
-				legend : 'Proba1',
+				legend : 'Puncte',
 			};
 			var barchart = new google.visualization.BarChart(document
 					.getElementById('barchart_div'));

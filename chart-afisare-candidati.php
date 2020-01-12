@@ -57,20 +57,20 @@ button:hover {
 
 			var data = new google.visualization.DataTable();
 			data.addColumn('string', 'Nume');
-			data.addColumn('number', 'Clasa');
+			data.addColumn('number', 'Puncte');
 		
 			var dataArray = [];
 			$.each(result, function(i, obj) {
-				dataArray.push([ obj.nume_candidati, parseInt(obj.clasa_candidati)  ]);
+				dataArray.push([ obj.nume_candidati, parseInt(obj.puncte)  ]);
 			});
 
 			data.addRows(dataArray);
 
 		var barchart_options = {
-				title : 'Clasa Candidati',
+				title : 'Puncte Candidati',
 				width : 1000,
 			height : 600,
-				legend : 'Clasa'
+				legend : 'Puncte'
 			};
 		var barchart = new google.visualization.BarChart(document
 				.getElementById('barchart_div'));

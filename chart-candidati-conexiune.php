@@ -12,7 +12,7 @@ try {
     echo $sql . "<br>" . $e->getMessage();
     $conn = null;
     }
-$stmt = $conn->prepare('select * from candidati');
+$stmt = $conn->prepare('select * from rezultate');
 $stmt->execute();
 $results = $stmt->fetchAll(PDO::FETCH_OBJ);
 echo json_encode($results);

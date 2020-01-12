@@ -25,10 +25,27 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
+input[type=textForUser], select, textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submitForUser] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 12px;
   border: none;
   cursor: pointer;
 }
@@ -105,6 +122,9 @@ button:hover{
     </div>
     <div class="column">
       <form action = "" method = "post">
+        <label for="Username">Username</label><br>
+        <input type="textForUser" name="user_candidati"   required="" placeholder="User candidat...">
+        <input type="submitForUser" name="Check User"  value="Check User" onsubmit="return false">
         <label for="nume">Nume</label>
         <input type="text" name="nume_candidati"   required="" placeholder="Nume candidat...">
         <label for="prenume">Prenume</label>
@@ -136,6 +156,10 @@ button:hover{
     </div>
   </div>
 </div>
+
+<?php
+
+?>
 <?php 
 if ( isset( $_POST['Adauga'] ) ) { 
  $servername = "localhost";
