@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+function FunctionAcasa() {
+    $(".content").hide();
+    $("#acasadiv").show();
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
@@ -81,7 +87,8 @@ background-color: #6666ff;
 <style>
 .content { display:none }
 </style>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+ <script>
 $(function() {
   $(".nav").on("click",function(e) {
      $(".content").hide();
@@ -89,8 +96,11 @@ $(function() {
   });
 });
 </script>
+
+
+ 
 </head>
-<body>
+<body onload="FunctionAcasa()">
 
 
 
@@ -124,7 +134,6 @@ $(function() {
   <?php include('paginawelcome.html') ?>
 
 </div></center>
-
 
 
 
