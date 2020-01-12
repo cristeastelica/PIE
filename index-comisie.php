@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <script>
+function FunctionAcasa() {
+    $(".content").hide();
+    $("#acasadiv").show();
+}
+</script>
+
 <?php
 if(!isset($_COOKIE["TestCookie"])) {
        header('refresh:1;url=index.php');
@@ -122,7 +130,8 @@ $(function() {
 });
 </script>
 </head>
-<body>
+<body onload="FunctionAcasa()">
+
 
 
 
