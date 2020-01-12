@@ -3,7 +3,7 @@
 <head>
 <script>
 function FunctionAcasa() {
-    $(".content").hide();
+    $(".content3").hide();
     $("#acasadiv").show();
 }
 </script>
@@ -28,7 +28,7 @@ body {
   font-family: Arial;
   margin: 0;
 }
-.container {
+.containere {
   position: relative;
   text-align: center;
   font-size: 60px;
@@ -53,7 +53,7 @@ body {
 h1 {
   text-align: center;
 }
-.topnav {
+.topnav3 {
   overflow: hidden;
   background-color: #333;
   border: 1px solid #ddd;
@@ -69,13 +69,15 @@ button {
   width: 100%;
 
 }
-.logoutbtn{
+.logoutbtn {
   text-align: center;
   float: right;
-  height: 40px;
-  width: 70px;
-  padding: 0px;
-  font-size: 15px;
+  margin-top: 30px;
+  margin-right: 20px;
+  height: 40px !important;
+  width: 70px !important;
+  padding: 0px !important;
+  font-size: 15px !important;
   background-color: #ff5050;
 }
 
@@ -83,7 +85,7 @@ button {
 button:hover {
   opacity: 0.8;
 }
-.topnav a {
+.topnav3 a {
   float: left;
   color: #ddd;
   text-align: center;
@@ -92,13 +94,14 @@ button:hover {
   font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav3 a:hover {
   background-color: #ddd;
   color: black;
+  text-decoration: none;
 }
 
 
-.topnav a.active {
+.topnav3 a.active {
   background-color: #ddd;
   color: white;
 }
@@ -107,20 +110,20 @@ button:hover {
 
 </div>
 <head>
- <div class="container">
+ <div class="containere">
 
   <div class="centered">Olimpiada nationala</div>
       <button onclick="window.open('logout.php')" class ="logoutbtn"> Logout</button>
 </div> 
 
 <style>
-.content { display:none }
+.content3 { display:none }
 </style>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><script>
 $(function() {
   $(".nav").on("click",function(e) {
     e.preventDefault();
-    $(".content").hide();
+    $(".content3").hide();
     $("#"+this.id+"div").show();
   });
 });
@@ -131,34 +134,52 @@ $(function() {
 
 
 
-<div class="topnav">
+<div class="topnav3">
 
   <a class="nav"  id ="acasa" href="#acasa">Acasa</a>
-    <a class="nav" href="#afisare" id="afisare" >Afisare Candidati</a>
+  <a class="nav"  id ="subiecte" href="#subiecte">Subiecte</a>
+  <a class="nav"  id ="faq" href="#faq">FAQ</a>
+  <a class="nav" href="#afisare" id="afisare" >Afisare Candidati</a>
   <a class="nav" id="rezultate" href="#rezultate"> Afisare Rezultate</a>
   <a class ="nav" href="#contact" id="contact">Contact</a>
 
 </div>
 
 
-<div id="acasadiv" class="content">
+<div id="acasadiv" class="content3">
   <?php include('acasa.php') ?>
 
 </div>
 
 
-<div id="contactdiv" class="content">
+<div id="contactdiv" class="content3">
   <?php include('contact.php') ?>
 
 </div>
-<div id="afisarediv" class="content">
+<center>
+<div id="afisarediv" class="content3">
   <?php include('afisarecandidati.php') ?>
-
 </div>
-<div id="rezultatediv" class="content">
+</center>
+<center>
+<div id="rezultatediv" class="content3">
   <?php include('rezultatecandidati.php') ?>
+</div>
+</center>
+<div id="faqdiv" class="content3">
+  <?php include('faq.html') ?>
 
 </div>
+<div id="subiectediv" class="content3">
+  <?php include('home-subiecte.php') ?>
+
+</div>
+
+<center><div id="logindiv" class="content3">
+  <?php include('paginawelcome.html') ?>
+
+</div></center>
+
 
 
 

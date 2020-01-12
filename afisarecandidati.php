@@ -16,6 +16,12 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.smr{
+margin-top: 40px !important;
+height: 30px;
+width: 70% !important;
+
+}
 
 body {font-family: Arial;
 height :100%;
@@ -33,7 +39,9 @@ button:hover{
   background-color: #45a049;
 }
 </style>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cauta dupa nume" title="Type in a name">
+<br>
+<h2>Filtrare candidati</h2></br>
+<input type="text" id="myInput" class ="smr" onkeyup="myFunction()" placeholder="Cauta dupa nume" title="Type in a name">
 <table id="myTable"> 
   <tr>
     <th>Cod</th>
@@ -100,8 +108,6 @@ function myFunction() {
 }
 
 </script>
-<center>
-    <button type="button" onclick="window.open('', '_self', ''); window.close();">Inapoi</button>
-  </center>
+
 </body>
 </html>

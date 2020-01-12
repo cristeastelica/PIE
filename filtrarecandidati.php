@@ -12,8 +12,9 @@
 </head>
 <body >
 <center>
+    <br>
 <h3>Reset Filter</h3>
-
+ </br>
     <div class="containernou">
         <table id="mytablee" class="w3-table-all">
             <thead>

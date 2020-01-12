@@ -32,7 +32,7 @@ body {
   color: white;
 }
 
-.centered {
+.centereda {
   position: absolute;
   text-align: left;
    text-shadow: 2px 2px 12px #000000;
@@ -57,7 +57,7 @@ h1 {
   color: #ddd;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+
   font-size: 17px;
 }
 .topnav1 a:hover {
@@ -81,7 +81,7 @@ background-color: #6666ff;
 <head>
  <div class="containerindex">
 
-  <div class="centered">Olimpiada nationala</div>
+  <div class="centereda">Olimpiada nationala</div>
 </div> 
 
 <style>
@@ -109,6 +109,7 @@ $(function() {
 
   <a class="nav"  id ="acasa" href="#acasa">Acasa</a>
   <a class="nav"  id ="subiecte" href="#subiecte">Subiecte</a>
+  <a class="nav"  id ="faq" href="#faq">FAQ</a>
   <a class ="nav" href="#contact" id="contact">Contact</a>
   <div class ="lstuff">
   <a class ="nav" href="#login" id="login">Login</a>
@@ -124,7 +125,10 @@ $(function() {
   <?php include('contact.php') ?>
 
 </div>
+<div id="faqdiv" class="content">
+  <?php include('faq.html') ?>
 
+</div>
 <div id="subiectediv" class="content">
   <?php include('home-subiecte.php') ?>
 
