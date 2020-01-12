@@ -13,9 +13,15 @@ td, th {
   padding: 8px;
 }
 
+.smr{
+margin-top: 40px !important;
+height: 30px;
+width: 70% !important;
+
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
 
 body {font-family: Arial;
 height :100%;
@@ -24,9 +30,9 @@ margin: 0;}
 button{
   background-color: #4CAF50;
   color: white;
-  padding: 12px 15px;
+  padding: 12px 15px !important;
   border: none;
-  margin-top: 20px;
+  margin-top: 20px !important;
 
   cursor: pointer;
 
@@ -36,7 +42,9 @@ button:hover{
   background-color: #45a049;
 }
 </style>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cauta dupa nume" title="Type in a name">
+<br>
+<h2>Filtrare rezultate</h2></br>
+<input type="text" id="myInput" class = "smr" onkeyup="myFunction()" placeholder="Cauta dupa nume" title="Type in a name">
 <table id="myTable"> 
   <tr>
     <th>Cod</th>

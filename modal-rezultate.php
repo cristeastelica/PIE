@@ -139,20 +139,13 @@ $(document).ready(function(){
   });
 });
 </script>
+<br></br>
 <button onclick="window.open('editarerezultate.php').style.display='block'" style="width:auto;">Editare rezultate</button>
-
 <button onclick="window.open('adaugarez.php').style.display='block'" style="width:auto;">Adaugare rezultate</button>
-
-
-
 <button onclick="window.open('stergererezultate.php').style.display='block'" style="width:auto;">Sterge rezultate</button>
-
-
-
 <button onclick="window.open('chart-diagrama-afisare.php').style.display='block'" style="width:auto;">Chart rezultate</button>
-
 <button onclick="window.open('pdf-rezultate.php').style.display='block'" style="width:auto;">Export PDF</button>
-
+<br></br>
 
 
 <?php include('rezultatecandidati.php')?>

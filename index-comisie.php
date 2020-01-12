@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-  <script>
+<script>
 function FunctionAcasa() {
-    $(".content").hide();
+    $(".content3").hide();
     $("#acasadiv").show();
 }
 </script>
 
+  
 <?php
 if(!isset($_COOKIE["TestCookie"])) {
        header('refresh:1;url=index.php');
@@ -16,7 +16,6 @@ if(!isset($_COOKIE["TestCookie"])) {
 ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
 
 body {
   margin: 0;
@@ -29,7 +28,7 @@ body {
   font-family: Arial;
   margin: 0;
 }
-.container {
+.containere {
   position: relative;
   text-align: center;
   font-size: 60px;
@@ -54,13 +53,39 @@ body {
 h1 {
   text-align: center;
 }
-.topnav {
+.topnav3 {
   overflow: hidden;
   background-color: #333;
   border: 1px solid #ddd;
 }
+button {
+  background-color: #4CAF50;
+  display: inline-block;
+  color: white;
+  padding: 14px 20px;
+  margin: 25px 35px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 
-.topnav a {
+}
+.logoutbtn {
+  text-align: center;
+  float: right;
+  margin-top: 30px;
+  margin-right: 30px;
+  height: 40px !important;
+  width: 70px !important;
+  padding: 0px !important;
+  font-size: 15px !important;
+  background-color: #ff5050;
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+.topnav3 a {
   float: left;
   color: #ddd;
   text-align: center;
@@ -68,41 +93,15 @@ h1 {
   text-decoration: none;
   font-size: 17px;
 }
-.topnav-right {
 
-  position: absolute;
-  right: 0px;
-
-  text-align: center;
-
-
-}
-.logoutbtn{
-  text-align: center;
-float: right;
-  height: 40px;
-  width: 70px;
-  padding: 0px;
-  background-color: #ff5050;
-  font-size: 15px;
-}
-.lstuff {
-float : right;
-
-}
-.topnav-right a:hover {
-  background-color: #e14848;
-  color: black;
-}
-.topnav-right a.active {
-  background-color: #e14848;
-  color: white;
-.topnav a:hover {
+.topnav3 a:hover {
   background-color: #ddd;
   color: black;
+  text-decoration: none;
 }
 
-.topnav a.active {
+
+.topnav3 a.active {
   background-color: #ddd;
   color: white;
 }
@@ -111,20 +110,20 @@ float : right;
 
 </div>
 <head>
- <div class="container">
+ <div class="containere">
 
   <div class="centered">Olimpiada nationala</div>
-    <button onclick="window.open('logout.php')" class ="logoutbtn"> Logout</button>
+      <button onclick="window.open('logout.php')" class ="logoutbtn"> Logout</button>
 </div> 
 
 <style>
-.content { display:none }
+.content3 { display:none }
 </style>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><script>
 $(function() {
   $(".nav").on("click",function(e) {
     e.preventDefault();
-    $(".content").hide();
+    $(".content3").hide();
     $("#"+this.id+"div").show();
   });
 });
@@ -135,46 +134,51 @@ $(function() {
 
 
 
-
-<center><div class="topnav">
+<div class="topnav3">
 
   <a class="nav"  id ="acasa" href="#acasa">Acasa</a>
+  <a class="nav"  id ="subiecte" href="#subiecte">Subiecte</a>
+  <a class="nav"  id ="faq" href="#faq">FAQ</a>
   <a class="nav" href="#operatii" id="operatii" >Operatii Candidati</a>
   <a class="nav" id="rezultate" href="#rezultate">Operatii Rezultate</a>
-    <a class="nav" id="arhiva" href="#arhiva">Arhiva</a>
+  <a class="nav" id="arhiva" href="#arhiva">Arhiva</a>
   <a class ="nav" href="#contact" id="contact">Contact</a>
-  <div class ="lstuff">
-
 
 </div>
 
-</div></center>
 
-
-<div id="acasadiv" class="content">
+<div id="acasadiv" class="content3">
   <?php include('acasa.php') ?>
 
 </div>
 
-<center><div id="operatiidiv" class="content">
+
+<div id="contactdiv" class="content3">
+  <?php include('contact.php') ?>
+
+</div>
+<center><div id="operatiidiv" class="content3">
   <?php include('modal.php') ?>
 
 </div></center>
 
-<center><div id="rezultatediv" class="content">
+<center><div id="rezultatediv" class="content3">
   <?php include('modal-rezultate.php') ?>
 
 </div></center>
-<center><div id="arhivadiv" class="content">
-  <?php include('arhiva.php') ?>
-
-</div></center>
-<div id="contactdiv" class="content">
-  <?php include('contact.php') ?>
+<div id="faqdiv" class="content3">
+  <?php include('faq.html') ?>
 
 </div>
-</div></center>
+<div id="subiectediv" class="content3">
+  <?php include('home-subiecte.php') ?>
 
+</div>
+
+<center><div id="logindiv" class="content3">
+  <?php include('paginawelcome.html') ?>
+
+</div></center>
 
 
 
