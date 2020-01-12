@@ -106,10 +106,10 @@ $clasa_candidati=filter_input(INPUT_POST, 'clasa_candidati');
 $scoala_candidati=filter_input(INPUT_POST, 'scoala_candidati');
 $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
-$proba1=filter_input(INPUT_POST, 'proba1');
-$proba2=filter_input(INPUT_POST, 'proba2');
-$proba3=filter_input(INPUT_POST, 'proba3');
-  $sql = "UPDATE rezultate SET nume_candidati='$nume_candidati',prenume_candidati='$prenume_candidati',clasa_candidati='$clasa_candidati' , scoala_candidati='$scoala_candidati',judet_candidati='$judet_candidati',localitate_candidati='$localitate_candidati',proba1='$proba1' ,proba2='$proba2' ,proba3='$proba3' where cod=$cod ";
+$materia=filter_input(INPUT_POST, 'materia');
+$puncte=filter_input(INPUT_POST, 'puncte');
+$locul=filter_input(INPUT_POST, 'locul');
+  $sql = "UPDATE rezultate SET nume_candidati='$nume_candidati',prenume_candidati='$prenume_candidati',clasa_candidati='$clasa_candidati' , scoala_candidati='$scoala_candidati',judet_candidati='$judet_candidati',localitate_candidati='$localitate_candidati',materia='$materia' ,puncte='$puncte' ,locul='$locul' where cod=$cod ";
   
 $conn->exec($sql);
 header('refresh:1;url=editarerezultate.php');
@@ -128,9 +128,9 @@ $clasa_candidati=filter_input(INPUT_POST, 'clasa_candidati');
 $scoala_candidati=filter_input(INPUT_POST, 'scoala_candidati');
 $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
-$proba1=filter_input(INPUT_POST, 'proba1');
-$proba2=filter_input(INPUT_POST, 'proba2');
-$proba3=filter_input(INPUT_POST, 'proba3');
+$materia=filter_input(INPUT_POST, 'materia');
+$puncte=filter_input(INPUT_POST, 'puncte');
+$puncte=filter_input(INPUT_POST, 'locul');
     $servername = "localhost";
     $username = "admin";
     $password = "admin123";
@@ -182,9 +182,9 @@ $conn->query($sql);
     <th>Scoala</th>
     <th>Judet</th>
     <th>Localitate</th>
-    <th>Proba1</th>
-    <th>Proba2</th>
-    <th>Proba3</th>
+    <th>Materia</th>
+    <th>Puncte</th>
+    <th>Locul</th>
     <th>Modifica</th>
   <?php
 
@@ -198,9 +198,9 @@ $conn->query($sql);
                       echo "<td><input type=text name=scoala_candidati value=  ' ".$row['scoala_candidati']."'></td>";
                         echo "<td><input type=text name=judet_candidati value=' ".$row['judet_candidati']." '></td>";
                           echo "<td><input type=text name=localitate_candidati value= ' ".$row['localitate_candidati']."'></td>";
-                          echo "<td><input type=text name=proba1 value= ' ".$row['proba1']."'></td>";
-                          echo "<td><input type=text name=proba2 value= ' ".$row['proba2']."'></td>";
-                          echo "<td><input type=text name=proba3 value= ' ".$row['proba3']."'></td>";
+                          echo "<td><input type=text name=proba1 value= ' ".$row['materia']."'></td>";
+                          echo "<td><input type=text name=proba2 value= ' ".$row['puncte']."'></td>";
+                          echo "<td><input type=text name=proba3 value= ' ".$row['locul']."'></td>";
                               echo "<td><input type=submit name='Modifica' value='Modifica'>";
                                   echo "</form>";
                                         echo "</tr>";

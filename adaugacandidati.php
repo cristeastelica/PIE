@@ -163,17 +163,17 @@ try {
    $sql = "INSERT INTO candidati (nume_candidati,prenume_candidati,adresa_candidati,telefon_candidati,email_candidati,clasa_candidati,scoala_candidati,judet_candidati,localitate_candidati,user_candidati,parola_candidati,materia) 
    VALUES('$nume_candidati','$prenume_candidati','$adresa_candidati','$telefon_candidati','$email_candidati','$clasa_candidati','$scoala_candidati','$judet_candidati','$localitate_candidati','$user_candidati','$parola_candidati','$materia_candidati')";
    $query="INSERT INTO utilizator(user,pass,rol) VALUES('$user_candidati','$parola_candidati','elev')";
-   $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,materia,puncte,locul) 
-   VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','$materia_candidati','0','0')";
+  //  $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,materia,puncte,locul) 
+  //  VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','$materia_candidati','0','0')";
    $conn->query($sql);
    $conn->query($query);
-   $conn->query($rez);
-   header('refresh:1;url=index.php');
+   //$conn->query($rez);
+   header('refresh:1;url=adaugacandidati.php');
     }catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();
      echo $query . "<br>" . $e->getMessage();
-   echo $rez . "<br>" . $e->getMessage();
+   //echo $rez . "<br>" . $e->getMessage();
     $conn = null;
     }}
 ?>

@@ -105,7 +105,7 @@ try {
       // use exec() because no results are returned
       $sql = "DELETE FROM candidati WHERE cod= '$cod' ";
       $conn->exec($sql);
-header('refresh:1;url=index.php');
+header('refresh:1;url=stergecandidati.php');
     }catch(PDOException $e)
     {
         

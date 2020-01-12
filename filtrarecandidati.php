@@ -25,6 +25,7 @@
                     <th>Scoala</th>
                     <th>Judet</th>
                     <th>Localitate</th>
+                    <th>Materia</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,7 +35,7 @@
                    $password = "admin123";
                  $myDB="7YNzXacPRV";
               $conn = new PDO("mysql:host=$servername;dbname=$myDB", $username, $password);
-                $stmt = $conn->prepare("select cod,nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,judet_candidati,localitate_candidati from candidati");
+                $stmt = $conn->prepare("select cod,nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,judet_candidati,localitate_candidati, materia from candidati");
                 $stmt->execute();
                 while($row = $stmt->fetch()){
                 ?>
@@ -46,6 +47,7 @@
                     <td><?php echo $row['scoala_candidati'] ?></td>
                     <td><?php echo $row['judet_candidati'] ?></td>
                     <td><?php echo $row['localitate_candidati'] ?></td>
+                    <td><?php echo $row['materia'] ?></td>
                 </tr>
                 <?php
                 }

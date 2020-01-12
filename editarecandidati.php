@@ -121,7 +121,7 @@ $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
   $sql = "UPDATE candidati SET nume_candidati='$nume_candidati',prenume_candidati='$prenume_candidati',clasa_candidati='$clasa_candidati' , scoala_candidati='$scoala_candidati',judet_candidati='$judet_candidati',localitate_candidati='$localitate_candidati' where cod=$cod ";
   
 $conn->exec($sql);
-header('refresh:1;url=index.php');
+header('refresh:1;url=editarecandidati.php');
 }
 $_POST = array();
   
