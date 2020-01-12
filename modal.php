@@ -26,7 +26,7 @@ $(document).ready(function(){
 <button class="masterclass"onclick="window.open('stergecandidati.php').style.display='block'" style="width:auto;">Sterge candidati</button>
 <button class="masterclass"onclick="window.open('chart-afisare-candidati.php').style.display='block'" style="width:auto;">Chart rezultate</button>
 <button class="masterclass"onclick="window.open('pdf-candidati.php').style.display='block'" style="width:auto;">Export PDF</button>
-<button class="masterclass"style.display='block' style="width:auto;">Filtreaza rezultate</button>
+<button class="masterclass"style.display='block' style="width:auto;">Reset Filter</button>
 <div id="div1"><h2></h2></div>
 </center>
 

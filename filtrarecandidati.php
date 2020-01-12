@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Filtrare Candidati</title>
+<title>Olimpiada Nationala</title>
     <meta charset="utf-8"/>
     <title>Table Dropdown Filter</title>
     <link href="w3.css" rel="stylesheet"/>
@@ -12,7 +12,7 @@
 </head>
 <body >
 <center>
-<h3>Filtrare Candidati</h3>
+<h3>Reset Filter</h3>
 
     <div class="containernou">
         <table id="mytablee" class="w3-table-all">

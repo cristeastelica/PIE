@@ -96,7 +96,7 @@ button:hover{
 
 <div class="container1">
   <div style="text-align:center">
-    <h2>Adauga candidati</h2>
+    <h2>Adauga Rezultate</h2>
     <p></p>
   </div>
   <div class="row">
@@ -123,12 +123,12 @@ button:hover{
         <input type="text" name="judet_candidati"  required="" placeholder="Judet candidat...">
         <label for="localitate">Localitate</label>
         <input type="text" name="localitate_candidati"  required="" placeholder="Localitate candidat...">
-       <label for="proba1">Proba1</label>
-        <input type="text" name="proba1"  required="" placeholder="Proba1...">
-        <label for="proba2">Proba2</label>
-        <input type="text" name="proba2"  required="" placeholder="Proba2...">
-        <label for="proba3">Proba3</label>
-        <input type="text" name="proba3"  required="" placeholder="Proba3...">
+       <label for="materia">Materia</label>
+        <input type="text" name="materia"  required="" placeholder="Materia...">
+        <label for="puncte">Puncte</label>
+        <input type="text" name="puncte"  required="" placeholder="Puncte...">
+        <label for="locul">Locul</label>
+        <input type="text" name="locul"  required="" placeholder="Locul...">
      
         <input type="submit" name="Adauga"  value="Adauga" onsubmit="return false">
         <button type="button" onclick="window.open('', '_self', ''); window.close();">Inapoi</button>
@@ -151,19 +151,19 @@ $clasa_candidati=filter_input(INPUT_POST, 'clasa_candidati');
 $scoala_candidati=filter_input(INPUT_POST, 'scoala_candidati');
 $judet_candidati=filter_input(INPUT_POST, 'judet_candidati');
 $localitate_candidati=filter_input(INPUT_POST, 'localitate_candidati');
-$proba1=filter_input(INPUT_POST, 'proba1');
-$proba2=filter_input(INPUT_POST, 'proba2');
-$proba3=filter_input(INPUT_POST, 'proba3');
+$materia=filter_input(INPUT_POST, 'materia');
+$puncte=filter_input(INPUT_POST, 'puncte');
+$locul=filter_input(INPUT_POST, 'locul');
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$myDB", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   
-   $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,proba1,proba2,proba3)VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','$proba1','$proba2','$proba3')";
+   $rez="INSERT INTO rezultate(nume_candidati,prenume_candidati,clasa_candidati,scoala_candidati,localitate_candidati,judet_candidati,materia,puncte,locul)VALUES('$nume_candidati','$prenume_candidati','$clasa_candidati','$scoala_candidati','$localitate_candidati','$judet_candidati','$materia','$puncte','$locul')";
 
    $conn->query($rez);
- header('refresh:1;url=index.php');
+ header('refresh:1;url=adaugarez.php');
     }catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();

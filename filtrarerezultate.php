@@ -12,7 +12,7 @@
 </head>
 <body background="img.jpg">
 <center>
-<h3>Filtrare Rezultate</h3>
+<h3>Reset Filter</h3>
 
     <div class="containernou">
         <table id="mytable" class="w3-table-all">

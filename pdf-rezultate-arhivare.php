@@ -25,9 +25,9 @@ $pdf->Cell($width_cell[2], 10, 'Clasa', 1, 0, 'C', true); // Fourth header colum
 $pdf->Cell($width_cell[3], 10, 'Scoala', 1, 0, 'C', true); // Third header column
 $pdf->Cell($width_cell[4], 10, 'Judet', 1, 0, 'C', true);
 $pdf->Cell($width_cell[5], 10, 'Localitate', 1, 0, 'C', true);
-$pdf->Cell($width_cell[6], 10, 'Proba1', 1, 0, 'C', true);
-$pdf->Cell($width_cell[7], 10, 'Proba2', 1, 0, 'C', true);
-$pdf->Cell($width_cell[8], 10, 'Proba3', 1, 1, 'C', true);
+$pdf->Cell($width_cell[6], 10, 'Materia', 1, 0, 'C', true);
+$pdf->Cell($width_cell[7], 10, 'Puncte', 1, 0, 'C', true);
+$pdf->Cell($width_cell[8], 10, 'Locul', 1, 1, 'C', true);
 //// header ends ///////
 $pdf->SetFont('Arial', '', 12);
 $pdf->SetFillColor(235, 236, 236); // Background color of header
@@ -41,9 +41,9 @@ foreach ($db->query($count) as $row) {
     $pdf->Cell($width_cell[3], 10, $row['scoala_candidati'], 1, 0, 'C', $fill);
     $pdf->Cell($width_cell[4], 10, $row['judet_candidati'], 1, 0, 'C', $fill);
     $pdf->Cell($width_cell[5], 10, $row['localitate_candidati'], 1, 0, 'C', $fill);
-     $pdf->Cell($width_cell[6], 10, $row['localitate_candidati'], 1, 0, 'C', $fill);
-      $pdf->Cell($width_cell[7], 10, $row['localitate_candidati'], 1, 0, 'C', $fill);
-     $pdf->Cell($width_cell[8], 10, $row['localitate_candidati'], 1, 1, 'C', $fill);
+    $pdf->Cell($width_cell[6], 10, $row['materia'], 1, 0, 'C', $fill);
+    $pdf->Cell($width_cell[7], 10, $row['puncte'], 1, 0, 'C', $fill);
+    $pdf->Cell($width_cell[8], 10, $row['locul'], 1, 1, 'C', $fill);
     $fill = !$fill; // to give alternate background fill  color to rows
 }
 $currentyear = date("Y");
