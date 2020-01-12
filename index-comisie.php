@@ -168,13 +168,14 @@ $(function() {
 </div></center>
 <div id="faqdiv" class="content3">
   <?php include('faq.html') ?>
-
 </div>
 <div id="subiectediv" class="content3">
   <?php include('home-subiecte.php') ?>
-
 </div>
+<center><div id="arhivadiv" class="content3">
+  <?php include('arhiva.php') ?>
 
+</div></center>
 <center><div id="logindiv" class="content3">
   <?php include('paginawelcome.html') ?>
 
